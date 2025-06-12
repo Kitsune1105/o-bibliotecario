@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Bibliotecário</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css">
+  </head>
+
+  <body>
+    <!--Barra de Navegação-->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="./capitulos.html">Capítulos</a></li>
+        <li><a href="./sobre.html">Sobre Mim</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!--Seção Principal-->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">O Bibliotecário</h1>
+        <p class="hero-subtitle">
+          "Mergulhe no infinito mundo de uma biblioteca cheia de mistérios"
+        </p>
+        <h4>Clique abaixo e conheça a história!</h4>
+        <div class="hero-buttons">
+          <button id="btn-sinopse">Conheça</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Janela de Informações-->
+
+    <div id="modal-sinopse" class="modal hidden">
+      <div class="modal-content">
+        <button class="close-button" id="fechar-modal">&times;</button>
+        <img
+          src="./src/imagens/bibliotecario-capa.png"
+          alt="Capa"
+          class="modal-capa"
+        />
+        <div class="modal-texto">
+          <h2 class="modal-titulo">O Bibliotecário</h2>
+          <p class="modal-sinopse">
+            Liam desperta em um lugar impossível: uma biblioteca infinita, onde
+            cada livro contém a história completa de alguém que já viveu. Sem
+            memórias de como chegou ali, ele encontra o solitário Bibliotecário
+            - um homem que sempre esteve sozinho, até agora. Afinal, nunca houve
+            ninguém além dele ali. Nunca deveria haver. Enquanto tentam
+            compreender como e por que Liam chegou àquele lugar, os dois
+            percorrem corredores sem fim, descobrindo segredos que jamais
+            deveriam ser lidos. Mas algumas histórias não têm um final... e
+            talvez essa seja uma delas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Trechos-->
+    <section class="trechos">
+      <h2 class="trechos-titulos">Trechos do Livro</h2>
+      <div class="trechos-container">
+        <article class="trecho">
+          <h3>Capítulo 1</h3>
+          <p>
+            "A primeira coisa que eu sinto é o cheiro de papel antigo, misturado
+            com um aroma amadeirado, e com um pouco de cheiro de couro também.
+            Ao abrir os olhos, eu estou deitado em um confortável tapete de cor
+            vermelho vinho, estendido em um piso de madeira polida. O que eu
+            sentia era uma estranha leveza, como se eu tivesse recém despertado
+            de um longo, longo sonho.
+          </p>
+          <p>
+            Ao olhar para cima, a luz dourada de lustres se espalhava suavemente
+            pelo ambiente. Acima de mim, um teto azul escuro, cheio de
+            constelações pintadas com tinta dourada, simulando um céu estrelado,
+            que era sustentado por colunas elegantes de madeira escura. Filas
+            intermináveis de estantes perfeitamente alinhadas se estendem para
+            todos os lados, repletas de livros, de todas as cores e tamanhos."
+          </p>
+        </article>
+
+        <article class="trecho">
+          <h3>Capítulo 2</h3>
+          <p>
+            "O nome brilhou em letras douradas na lombada de um livro grosso,
+            elegantemente encadernado em couro verde. Um livro de Thomas Edison?
+            Minhas mãos se ergueram por instinto, enquanto eu me perguntava o
+            que será que havia ali. Sua história real? Coisas que ninguém sabia?
+          </p>
+          <p>
+            Meus dedos estavam a meros centímetros da capa quando algo caiu ao
+            meu lado com um baque repentino. Virei o rosto, confuso, e me
+            deparei com um livro que não estava ali antes. Ele repousava no
+            chão, virado de forma que eu não conseguia ler o título. Mas
+            diferente dos outros volumes da Biblioteca, este parecia...
+            atrativo? Abaixei-me devagar, hesitante, e o virei para ler o título
+            na capa..."
+          </p>
+        </article>
+
+        <article class="trecho">
+          <h3>Capítulo ?</h3>
+          <p>
+            "Minha garganta estava seca.
+            <span class="fala-bibliotecario"
+              >— Você está começando a entender, não está?</span
+            >
+            — ele continuou —
+            <span class="fala-bibliotecario"
+              >Começando a compreender quem eu sou?</span
+            >
+          </p>
+          <p>
+            Meu peito subia e descia rápido demais. Eu queria correr, mas minhas
+            pernas não respondiam. E ele percebeu como eu estava.
+          </p>
+          <p>
+            <span class="fala-bibliotecario"
+              >— Está bem, Liam, portador do conhecimento. Você quer uma
+              verdade? Aqui vai uma.</span
+            >
+          </p>
+          <p>
+            Ele deu um passo à frente, e eu tentei me afastar, mas notei que já
+            estava encostado em uma prateleira.
+          </p>
+          <p>
+            <span class="fala-bibliotecario">— Eu sou o Bibliotecário..."</span>
+          </p>
+        </article>
+      </div>
+
+      <div class="cta-leia">
+        <a class="botao-explorar" href="capitulos.html">Começe a explorar</a>
+      </div>
+    </section>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

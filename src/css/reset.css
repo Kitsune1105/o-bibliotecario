@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --marrom-bege-claro: #a38e75;
+  /* Um tom de marrom claro com nuances de bege. */
+  --marrom-escuro: #3c3026;
+  /* Um marrom muito escuro, quase um marrom-café. */
+  --bege-dourado: #e0cfb3;
+  /* Um bege claro com um toque dourado. */
+  --dourado-intenso: #d4af37;
+  /* Um dourado vibrante e marcante. */
+  --branco-suave: #e0d8cc;
+  /* Um branco levemente acinzentado ou cremoso. */
+}

@@ -1,0 +1,137 @@
+.capitulos-introducao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.capitulos-box {
+  background-color: rgba(28, 24, 20, 0.7); /* igual ao hero-content */
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--branco-suave);
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.capitulos-introducao h2 {
+    color: var(--dourado-intenso);
+}
+
+.capitulos-introducao p {
+    color: #e0e0e0;
+}
+
+.lista-capitulos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch; /* Faz todos os cards crescerem igualmente */
+  padding: 2rem;
+}
+
+.botoes-capitulo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn-leia, .btn-wattpad, .btn-pdf {
+  padding: 10px;
+  border: none;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-leia {
+  background-color: #8b5e3c;
+  color: white;
+}
+
+.btn-wattpad {
+  background-color: #f15a24;
+  color: white;
+}
+
+.btn-pdf {
+  background-color: #555;
+  color: white;
+}
+
+.btn-leia:hover, .btn-wattpad:hover, .btn-pdf:hover {
+  opacity: 0.9;
+}
+
+.card-capitulo {
+  background-color: rgba(60, 48, 38, 0.8);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-capitulo h3 {
+  color: var(--dourado-intenso);
+  margin-bottom: 0.5rem;
+}
+
+.card-capitulo p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.btn-leia {
+  display: inline-block;
+  background-color: var(--bege-dourado);
+  color: var(--marrom-escuro);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid var(--dourado-intenso);
+  transition: background-color 0.3s ease;
+}
+
+.btn-leia:hover {
+  background-color: #cdb899;
+}
+
+.capitulo {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--branco-suave);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.titulo-capitulo {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--dourado-intenso);
+    text-align: center;
+}
+
+.conteudo-capitulo p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    white-space: pre-line;  
+}
+
+.fala-bibliotecario {
+  font-style: italic; /* Deixa a fala em itálico */
+  color: var(--bege-dourado); /* Muda a cor para o dourado do seu tema */
+  /* Se quiser, pode adicionar font-weight: bold; ou outros estilos aqui. */
+}
