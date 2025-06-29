@@ -1,0 +1,262 @@
+/* --- Regras de Responsividade --- */
+
+/* Ajustes para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    /* Navbar */
+    nav ul {
+      flex-direction: column; /* Links em coluna */
+      gap: 1rem; /* Menos espaço entre eles */
+      text-align: center;
+    }
+  
+    nav {
+      padding: 1rem;
+    }
+  
+    /* Hero Section */
+    .hero-content {
+      padding: 1.5rem; /* Menos padding */
+    }
+  
+    .hero-title {
+      font-size: 2.5rem; /* Fonte menor */
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem; /* Fonte menor */
+      margin-bottom: 1.5rem;
+    }
+  
+    /* Modal de Sinopse */
+    .modal-content {
+      flex-direction: column; /* Capa e texto um sobre o outro */
+      width: 95%; /* Ocupa mais largura */
+      max-width: 95%; /* Garante que não estoure */
+      padding: 1rem;
+      max-height: 85vh; /* Ajusta a altura máxima */
+    }
+  
+    .modal-capa {
+      max-width: 80%; /* Imagem menor no modal */
+      margin: 0 auto 1rem auto; /* Centraliza a imagem e adiciona margem inferior */
+    }
+  
+    .modal-texto {
+      width: 100%; /* Texto ocupa toda a largura */
+      padding: 0; /* Remove padding extra aqui, se tiver */
+    }
+  
+    .modal-titulo {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .modal-sinopse {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    /* Trechos */
+    .trechos {
+      padding: 2rem 1rem;
+    }
+  
+    .trechos-titulos {
+      font-size: 2rem;
+    }
+  
+    .trechos-container {
+      flex-direction: column; /* Trechos um abaixo do outro */
+      align-items: center; /* Centraliza os trechos */
+      gap: 1.5rem;
+    }
+  
+    .trecho {
+      width: 90%; /* Trecho ocupa mais largura */
+      max-width: 400px; /* Limita a largura máxima para não ficar muito grande em tablets */
+      padding: 1rem;
+    }
+  
+    /* Seção Sobre Mim */
+    .sobre-mim {
+      padding: 2rem 1rem;
+    }
+  
+    .container-sobre {
+      max-width: 95%;
+    }
+  
+    .avatar {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .titulo-sobre {
+      font-size: 1.8rem;
+    }
+  
+    .box-sobre p {
+      font-size: 1rem;
+    }
+  
+    /* Contato */
+    .container-contato {
+      padding: 2rem 1rem;
+    }
+  
+    .redes-sociais {
+      flex-direction: column; /* Ícones um abaixo do outro */
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .icone-rede {
+      width: 80%; /* Ícones ocupam mais largura */
+      max-width: 250px;
+      justify-content: center; /* Centraliza o texto e ícone */
+    }
+  }
+  
+  /* Ajustes para telas médias (tablets e laptops pequenos) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Navbar */
+    nav ul {
+      gap: 1.5rem;
+    }
+  
+    /* Hero Section */
+    .hero-content {
+      max-width: 700px;
+    }
+  
+    .hero-title {
+      font-size: 3rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    /* Modal de Sinopse */
+    .modal-content {
+      max-width: 90%;
+      padding: 1.5rem;
+    }
+  
+    /* Trechos */
+    .trechos-container {
+      flex-wrap: wrap; /* Permite quebrar em duas colunas, se necessário */
+      gap: 1.5rem;
+    }
+  
+    .trecho {
+      width: calc(
+        50% - 1.5rem
+      ); /* Dois trechos por linha, com espaço entre eles */
+      max-width: 350px; /* Limita a largura individual */
+    }
+  
+    /* Seção Sobre Mim */
+    .box-sobre {
+      padding: 1.5rem;
+    }
+  
+    .titulo-sobre {
+      font-size: 2.2rem;
+    }
+  
+    /* Contato */
+    .icone-rede {
+      padding: 0.7rem 1.2rem;
+    }
+  }
+  
+  /* Capitulos - Adaptação */
+  @media (max-width: 768px) {
+    .capitulos-introducao {
+      padding: 2rem 1rem;
+    }
+  
+    .capitulos-box {
+      padding: 1.5rem;
+      max-width: 95%;
+    }
+  
+    .capitulos-introducao h2 {
+      font-size: 2rem;
+    }
+  
+    .capitulos-introducao p {
+      font-size: 0.95rem;
+    }
+  
+    .lista-capitulos {
+      flex-direction: column; /* Cards de capítulo um abaixo do outro */
+      align-items: center;
+      padding: 1rem;
+      gap: 1.5rem;
+    }
+  
+    .card-capitulo {
+      width: 90%; /* Ocupa mais largura */
+      max-width: 400px; /* Limita a largura máxima */
+      padding: 1rem;
+    }
+  
+    .botoes-capitulo {
+      flex-direction: column; /* Botões um abaixo do outro */
+      gap: 10px;
+    }
+  
+    .btn-leia,
+    .btn-wattpad,
+    .btn-pdf {
+      width: 100%;
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  
+    /* Estilos do Capítulo (capitulo-1.html, etc.) */
+    .capitulo {
+      padding: 2rem 1rem;
+      max-width: 95%;
+    }
+  
+    .titulo-capitulo {
+      font-size: 2rem;
+    }
+  
+    .conteudo-capitulo p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+  
+  /* Ajustes para telas médias de capítulos */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .lista-capitulos {
+      padding: 2rem;
+      gap: 1.5rem;
+      flex-wrap: wrap; /* Permite cards em múltiplas colunas */
+    }
+  
+    .card-capitulo {
+      width: calc(
+        50% - 1.5rem
+      ); /* Dois cards por linha, com espaço entre eles */
+      max-width: 450px;
+    }
+  
+    .capitulo {
+      padding: 3rem 1.5rem;
+      max-width: 700px;
+    }
+  
+    .titulo-capitulo {
+      font-size: 2.2rem;
+    }
+  
+    .conteudo-capitulo p {
+      font-size: 1.05rem;
+    }
+  }
